@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="doapps.github.activity.GraphicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/riverDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RIO - SECTOR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="0dp">
+        <!-- android:paddingTop="@dimen/activity_vertical_margin" -->
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linear_layout_graphic"
+            android:background="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <!-- Current Year -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:background="@color/colorBlack"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/Currentyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="año actual" />
+
+        </LinearLayout>
+        <!-- Back Year -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:background="@color/colorBrown"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/Backyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="año pasado" />
+
+        </LinearLayout>
+        <!-- max -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:background="@color/colorBlue"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="maximo" />
+
+        </LinearLayout>
+        <!-- prom -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:background="@color/colorGreen"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/prom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="promedio" />
+
+        </LinearLayout>
+        <!-- min -->
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="5dp"
+                android:background="@color/colorRed"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="minimo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
